@@ -39,7 +39,7 @@ namespace RoomDetailGenerator
                 v = l * w * h;
                 Console.WriteLine("Volume: " + v);
 
-                Console.WriteLine("Do you want to continue measuring rooms? y/n");
+                Console.WriteLine("Do you want to continue measuring rooms?? y/n");
                 input = Console.ReadLine();
             }
             while (input == "y");
