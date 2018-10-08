@@ -11,9 +11,11 @@ namespace RoomDetailGenerator
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Grand Circus' Room Detail Generator!");
+            //input is here so I can use it in all my code.
             string input;
             do
             {
+                //Parse the string to double so the user can input a decimal.
                 Console.WriteLine("Please enter the length");
                 string length = Console.ReadLine();
                 double l = double.Parse(length);
@@ -26,6 +28,7 @@ namespace RoomDetailGenerator
                 string height = Console.ReadLine();
                 double h = double.Parse(height);
 
+                //declaring my variables.
                 double p;
                 double a;
                 double v;
@@ -42,6 +45,7 @@ namespace RoomDetailGenerator
                 Console.WriteLine("Do you want to continue measuring rooms?? y/n");
                 input = Console.ReadLine();
             }
+            //this loop ends if n is the input and loops if y is the input.
             while (input == "y");
         }
   
